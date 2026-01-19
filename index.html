@@ -1,14 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>School Landing Page</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Landing Page</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+
 </head>
-<body>
+<body> 
+    <header class="head">
+        <div class="container">
+            <div class="column">
+                <h1 class="textcol">Coffee Gorula</h1>
+                <img class="imgcol" src="./pictures/coffee_icon.svg" alt="columnimg">
+            </div>
 
-  <h1>Hello Project</h1>
+            <button class="burger" type="button" aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-  <script src="js/script.js"></script>
+            <nav class="nav">
+                <ul class="ul-nav">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Menu">Menu</a></li>
+                    <li><a href="#Offers">Offers</a></li>
+                    <li><a href="#Contact_Us">Contact Us</a></li>  
+                    <li><a href="#Booking">Booking</a></li>   
+                </ul>
+            </nav>
+            
+            <div class="search_bar"> 
+                <input class="search_input" type="text"/>
+                <img class="searchicon" src="./pictures/search_bar.svg" alt="search">
+            </div>
+
+            <div class="icon">
+                <img class="iconsize" src="./pictures/usericon.svg" alt="usericon">
+            </div>
+        </div>
+        </header>
+
+        <section class="sec1" id="Home">
+            <div class="textimg">
+                <div class="info">
+                    <h1>Take your favorite coffee in our cozy space.</h1>
+                    <p>Feel at home with every cup</p>
+
+                    <div class="actions">
+                        <a class="Offers" href="#Offers" class="">Offers</a>
+                        <a class="Book_It" href="#Book it" class="">Book It</a>
+                    </div>
+                </div>
+                 <button class="arrow arrow-left" type="button" aria-label="Previous slide">
+                     <img src="./pictures/arrowleft.svg" alt="">
+                </button>
+
+                <button class="arrow arrow-right" type="button" aria-label="Next slide">
+                    <img src="./pictures/arrowright.svg" alt="">
+                </button>
+                <div class="pic">
+                    <img class="pic1" src="./pictures/coffeepic.jpg" alt="img">
+                </div>
+            </div>
+        </section>
+
+        <section class="Menu" id="Menu">
+            <div class="menulist">
+                <h1 class="text2">Take A Look On Our Coffee Menu</h1>
+                
+                <div class="menu_cards">
+                    <div class="coffee">
+                        <img class="cofimg" src="./pictures/hotcoffee.jpg" alt="coffee">
+                        <h3>Hot Coffee list <br> 7₾-10₾</h3>
+                        <p>Espresso, Americano, Cappuccino, latte, Flat White, Cortado, Mocha</p>
+                    </div>
+                    <div class="coffee">
+                        <img class="cofimg" src="./pictures/iced_coffee.jpg" alt="coffee">
+                        <h3>Iced Coffee list <br>  7₾-10₾</h3>
+                        <p>Iced Coffee, Iced Latte, Cold Brew, Iced Americano, Frappé</p>
+                    </div>
+                    <div class="coffee">
+                        <img class="cofimg" src="./pictures/mathca_coffee.jpg" alt="coffee">
+                        <h3>Special Coffee list <br> 9₾-12₾</h3>
+                        <p>Matcha Latte, Chai Latte, Affogato, Irish Coffee, Turkish Coffee</p>
+                    </div>
+                    <div class="coffee">
+                        <img class="cofimg" src="./pictures/almond_coffee.jpg" alt="coffee">
+                        <h3>Vegan/Fasting Coffee list <br> 8₾-12₾</h3>
+                        <p>Oat Milk Coffee, Almond Milk Latte, Soy Milk Latte</p>
+                </div>
+            </div>
+            </div>
+
+        </section>
+
+        <section class="Sweets" id="Offers">
+            <div class="Sweetlist">
+                <h1 class="sweet_text">A Little Sweetness for Your Week</h1>
+                <h2 class="sweet_text2"> Our special desserts are available for only 4₾</h2>
+
+                <div class="sweet-cards">
+                    <div class="card1">
+                        <div class="sweet">
+                            <img class="sweetimg" src="./pictures/croissants.jpg" alt="croissants">
+                            <p class="p">Freshly baked croissants, flaky perfection in every bite.</p>
+                         </div>
+
+                        <div class="sweet">
+                            <img class="sweetimg" src="./pictures/cakes.jpg" alt="cakes">
+                            <p class="p">Delicate cake slices made with light cream and fresh ingredients.</p>
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <div class="sweet">
+                            <img class="sweetimg" src="./pictures/macaroni.jpg" alt="macaroni">
+                            <p class="p">Colorful French macarons with a delicate, creamy filling</p>
+                         </div>
+
+                        <div class="sweet">
+                            <img class="sweetimg" src="./pictures/cookies.jpg" alt="cookies ">
+                            <p class="p">Soft inside, crispy outside cookies baked daily.</p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="food-fact">
+            <h2 class="fun-facts-title">Fun Facts About Food</h2>
+            <h2>Did you know?</h2>
+            <p id="factText">Loading food fact...</p>
+        </section>
+
+        <footer class="footer">
+            <div class="contact_booking">
+                <div class="Contact_Us" id="Contact_Us">
+                    <h1>How can you reach us?</h1>
+
+                    <div class="information">
+                        <p>Address: 15 Alexandre Griboedovi Str. Tbilisi, Georgia</p>
+                        <p>Phone: +2349022396389</p>
+                        <p>Email: contact@contentionary.com</p>
+                    </div>
+                </div>
+
+                <div class="Booking" id="Booking">
+
+                    <h1>Booking Here</h1>
+
+                     <form class="booking-form" id="form">
+                        <input type="text" id="name"  placeholder="Name" />
+                        <input type="email" id="email"  placeholder="Email" />
+                        <input type="text" id="subject"  placeholder="Subject" />
+
+                        <div class="password-field">
+                            <input type="tel" id="phone" placeholder="Phone number">
+                        </div>
+
+                        <textarea id="message" rows="6" placeholder="Input Text"></textarea>
+                        <button type="submit">Send</button>
+
+                        <p id="error"></p>
+                    </form>
+
+
+
+                </div>
+
+            </div>
+
+        </footer>
+
+
+        <div class="cookie" id="cookieBox">
+            <p>This site uses cookies to improve your experience.</p>
+            <button type="button" id="cookieBtn">Accept</button>
+        </div>
+
+    <script src="js/script.js"></script>
+
 </body>
 </html>
+
+    
+
+
