@@ -40,15 +40,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //Fun Facts about Food
 
-  fetch("https://uselessfacts.jsph.pl/random.json?language=en")
+fetch("https://www.themealdb.com/api/json/v1/1/random.php")
   .then(response => response.json())
   .then(data => {
-    document.getElementById("factText").textContent = data.text;
+    const meal = data.meals[0];
+    document.getElementById("factText").textContent =
+      `Did you know? ${meal.strMeal} is a popular dish from ${meal.strArea}. 🍽️`;
   })
   .catch(() => {
     document.getElementById("factText").textContent =
-      "Could not load food fact ☕";
+      "Food connects cultures around the world 🍕";
   });
+
 
 });
 
