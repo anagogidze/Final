@@ -45,7 +45,7 @@ fetch("https://www.themealdb.com/api/json/v1/1/random.php")
   .then(data => {
     const meal = data.meals[0];
     document.getElementById("factText").textContent =
-      `Did you know? ${meal.strMeal} is a popular dish from ${meal.strArea}. 🍽️`;
+      `Did you know? ${meal.strMeal} is a popular dish for ${meal.strArea}. 🍽️`;
   })
   .catch(() => {
     document.getElementById("factText").textContent =
